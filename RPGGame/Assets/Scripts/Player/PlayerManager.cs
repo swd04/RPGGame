@@ -7,7 +7,7 @@ using System.Collections;
 public class PlayerManager : MonoBehaviour
 {
     [Header("")]
-    public float moveDuration = 0.5f;
+    public float moveDuration = 0.25f;
 
     //
     private Vector3 targetPos;
@@ -76,6 +76,16 @@ public class PlayerManager : MonoBehaviour
     /// <returns></returns>
     private bool CanMoveTo(Vector3 pos)
     {
-        return true;
+        DungeonManager dungeon = FindObjectOfType<DungeonManager>();
+        if (dungeon == null) return false;
+
+        int x = Mathf.FloorToInt(pos.x + dungeon.tiles.GetLength(0) * 0.5f);
+        int y = Mathf.FloorToInt(pos.z + dungeon.tiles.GetLength(1) * 0.5f);
+
+        if (x < 0 || x >= dungeon.tiles.GetLength(0) || y < 0 || y >= dungeon.tiles.GetLength(1))
+            return false;
+
+        DungeonTileType tile = dungeon.tiles[x, y];
+        return tile == DungeonTileType.Floor;
     }
 }
