@@ -5,9 +5,28 @@
 /// </summary>
 public enum SceneType
 {
-    GameTitleScene, //ゲームタイトルシーン
-    BaseScene, //拠点シーン
-    DungeonScene, //ダンジョンシーン
-    BattleScene, //戦闘シーン
-    BattleResultScene //戦闘結果シーン
+    /// <summary>
+    /// ゲームタイトルシーン
+    /// </summary>
+    GameTitleScene,
+
+    /// <summary>
+    /// 拠点シーン
+    /// </summary>
+    BaseScene,
+
+    /// <summary>
+    /// ダンジョンシーン
+    /// </summary>
+    DungeonScene,
+
+    /// <summary>
+    /// 戦闘シーン
+    /// </summary>
+    BattleScene,
+
+    /// <summary>
+    /// 戦闘結果シーン
+    /// </summary>
+    BattleResultScene
 }
