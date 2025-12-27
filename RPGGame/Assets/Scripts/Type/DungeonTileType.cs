@@ -22,7 +22,12 @@ public enum DungeonTileType
     /// <summary>
     /// ŽŸ‚ÌŠK‘w
     /// </summary>
-    Stairs,
+    StairsUp,
+
+    /// <summary>
+    /// ‘O‚ÌŠK‘w
+    /// </summary>
+    StairsDown,
 
     /// <summary>
     /// ’†Œpƒ|ƒCƒ“ƒg

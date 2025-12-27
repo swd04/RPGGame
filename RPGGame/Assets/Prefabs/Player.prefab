@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2735269996740384474}
   - component: {fileID: 5442147314488464609}
-  - component: {fileID: 2242659249317157835}
   - component: {fileID: 8905015867242734095}
   - component: {fileID: 9039126163221329020}
   m_Layer: 0
@@ -43,19 +42,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5457532372655885738}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2242659249317157835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5457532372655885738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e98dbe72a4a630240be1f031c831c4b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
-  moveDuration: 0.25
 --- !u!23 &8905015867242734095
 MeshRenderer:
   m_ObjectHideFlags: 0
